@@ -5,22 +5,21 @@
 // @import '../../../build/assets/i/svg/bg/css/sprite.css'
 html,
 body {
-	font-size: 17px;
+  font-size: 17px;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	padding-bottom: 700px;
-	font-family: 'Open Sans', 'Arial', sans-serif;
-	font-size: 20px;
-	line-height: 30px;
-	color: $tundora;
-	background: maroon;
+  margin: 0;
+  padding: 0;
+  @include robotregular;
+  font-size: 18px;
+  line-height: 1.3;
+  color: $limed-spruce;
+  background: white;
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1,
@@ -29,42 +28,30 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 ul {
-	@include reset-list;
+  @include reset-list;
 }
 
 p {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .hidden {
-	display: none;
-}
-
-@media screen and (max-width: $xl) {
-	.container-big {
-		width: 768px;
-	}
-}
-
-@media screen and (max-width: $md) {
-	.container-big {
-		padding: 0 30px;
-		width: 320px;
-	}
+  display: none;
 }
 
 .container {
-	margin: 0 auto;
-	width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1210px;
 }

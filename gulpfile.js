@@ -95,7 +95,6 @@ gulp.task('pug', function () {
 	// .pipe(notify("Change html"));
 });
 
-
 gulp.task("css", function () {
 	return gulp.src('src/assets/sass/my.scss')
 		.pipe(plumber())
@@ -142,7 +141,6 @@ gulp.task("fonts", function () {
 		.pipe(gulp.dest('build/assets/fonts'))
 		.on('end', browserSync.reload);
 });
-
 
 gulp.task("webp", function () {
 	return gulp.src('src/assets/i/**/*.{jpg, png}', {since: gulp.lastRun('webp')})
