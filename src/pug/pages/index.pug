@@ -1,21 +1,33 @@
 extends template
 
 block css
-	//- link(rel="stylesheet" type="text/css" href="assets/i/svg/bg/css/sprite.css")
-	link(rel="stylesheet" type="text/css" href="assets/css/my.css")
+    //- link(rel="stylesheet" type="text/css" href="assets/i/svg/bg/css/sprite.css")
+    link(rel="stylesheet" type="text/css" href="assets/css/my.css")
 
 block title
-	title Main
+    title Main
 
 block content
-	include ../includes/mixins
-	.hidden
-		include ../../../build/assets/i/svg/inline/sprite.svg
+    include ../includes/mixins
+    .hidden
+        include ../../../build/assets/i/svg/inline/sprite.svg
 
-	.container
-		p Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat amet, recusandae id eaque, fugiat nihil quibusdam adipisci cupiditate animi architecto tempora! Ipsam temporibus ipsa illo qui sed, quis minus earum?
-
-	include ../includes/scripts/ie-scripts
+    header.main-header
+        .container
+            .main-header__content
+                .phone
+                    img.phone__img(src="assets/i/phone.svg" alt="")
+                    span Phone:
+                    a(href="tel:+37379505748") + (373) 79 505 748
+                .socials
+                    img(src="assets/i/mail.svg").mail
+                    a.socials__email(href="mailto:clinic_dental@gmail.com") clinic_dental@gmail.com
+                    .socials__icons
+                        a(href="#")
+                            img(src="assets/i/facebook.svg" alt="")
+                        a(href="#")
+                            img(src="assets/i/twitter.svg" alt="")
+    include ../includes/scripts/ie-scripts
 
 block scripts
-	script(src="assets/libs/jquery-easy-scroll/jquery.easeScroll.js")
+    script(src="assets/libs/jquery-easy-scroll/jquery.easeScroll.js")

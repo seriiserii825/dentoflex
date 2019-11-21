@@ -1,4 +1,4 @@
-$(function () {
+jQuery(document).ready(function($) {
   /*
       https://www.jqueryscript.net/animation/Smooth-Mouse-Wheel-Scrolling-Plugin-With-jQuery-easeScroll.html
       ===========================*/
@@ -16,7 +16,6 @@ $(function () {
     touchpadSupport: true,
     fixedBackground: true
   });
-
 });
 
 
