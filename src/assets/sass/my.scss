@@ -3,10 +3,6 @@
 @import 'partials/mixins';
 @import '../libs/slick/slick/slick.scss';
 // @import '../../../build/assets/i/svg/bg/css/sprite.css'
-html,
-body {
-  font-size: 17px;
-}
 
 body {
   margin: 0;
@@ -32,6 +28,7 @@ h6 {
   padding: 0;
 }
 
+
 img {
   max-width: 100%;
   height: auto;
@@ -50,11 +47,40 @@ p {
   display: none;
 }
 
+.container-big {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1210px;
 }
 
+.btn {
+  display: inline-block;
+  width: 200px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.16);
+  border-radius: 7px;
+  background-color: #eb662d;
+  transition: all .3s ease;
+
+  &:active {
+    background-color: #eb662d;
+    box-shadow: none;
+  }
+
+  &:hover {
+    background: #BF3D05;
+  }
+}
+
 @import "blocks/header";
 @import "blocks/navigation";
+@import "blocks/slider";

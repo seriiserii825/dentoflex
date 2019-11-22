@@ -1,0 +1,70 @@
+.slider-wrap {
+  position: relative;
+
+  .slider__button {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 85px;
+    border-radius: 7px;
+    background-color: #35414b;
+    opacity: 0.7;
+    z-index: 3;
+    transition: all .3s;
+    &:hover {
+      background-color: #151a22;
+    }
+  }
+
+  .slider__button--left {
+    left: 50px;
+  }
+
+  .slider__button--right {
+    right: 50px;
+  }
+}
+
+.slider {
+  position: relative;
+  &__item {
+    position: relative;
+    height: 600px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,.3);
+      z-index: 1;
+    }
+  }
+
+  &__content {
+    position: relative;
+    top: 180px;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1210px;
+    color: white;
+    z-index: 2;
+  }
+  &__title {
+    margin-bottom: 28px;
+    @include montserat;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+  }
+  &__text {
+    margin-bottom: 40px;
+    max-width: 470px;
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
