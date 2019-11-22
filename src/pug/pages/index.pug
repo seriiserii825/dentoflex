@@ -12,21 +12,9 @@ block content
     .hidden
         include ../../../build/assets/i/svg/inline/sprite.svg
 
-    header.main-header
-        .container
-            .main-header__content
-                .phone
-                    img.phone__img(src="assets/i/phone.svg" alt="")
-                    span Phone:
-                    a(href="tel:+37379505748") + (373) 79 505 748
-                .socials
-                    img(src="assets/i/mail.svg").mail
-                    a.socials__email(href="mailto:clinic_dental@gmail.com") clinic_dental@gmail.com
-                    .socials__icons
-                        a(href="#")
-                            img(src="assets/i/facebook.svg" alt="")
-                        a(href="#")
-                            img(src="assets/i/twitter.svg" alt="")
+    include ../includes/header
+    include ../includes/navigation
+
     include ../includes/scripts/ie-scripts
 
 block scripts
