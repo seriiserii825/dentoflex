@@ -241,7 +241,7 @@ gulp.task('default', gulp.series(
 	gulp.parallel(
 		'css',
 		'js',
-		'alljs',
+		// 'alljs',
 		// 'webp',
 		// 'svg-bg',
 		'fonts',

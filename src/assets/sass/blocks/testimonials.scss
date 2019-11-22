@@ -1,0 +1,36 @@
+.testimonials {
+  &__content {
+    position: relative;
+    top: -60px;
+    display: flex;
+  }
+  &__item {
+    flex: 1;
+    padding: 30px 20px;
+    color: white;
+    background: $picton-blue;
+    border-right: 2px solid #9cd9ef;
+    &:last-child {
+      border: none;
+    }
+  }
+  &__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    border: 6px solid #75cae9;
+    overflow: hidden;
+  }
+  &__title {
+    margin-bottom: 14px;
+    text-align: center;
+  }
+  &__text {
+    text-align: center;
+  }
+}
