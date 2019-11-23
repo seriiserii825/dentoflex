@@ -1,0 +1,58 @@
+.sandwitch-wrapper {
+  width: 36px;
+  height: 36px;
+  border: 1px solid $cerulean;
+  border-radius: 3px;
+  display: none;
+  cursor: pointer;
+  @media screen and (max-width: 972px) {
+    display: block;
+  }
+  &.sandwitch--active {
+    z-index: 10001;
+  }
+
+}
+.sandwitch {
+  position: relative;
+  top: 10px;
+}
+.sandwitch.sandwitch--active {
+  z-index: 1001;
+}
+
+.sandwitch--active .sandwitch__line--top {
+  top: 6px;
+  transform: rotate(45deg);
+}
+
+.sandwitch--active .sandwitch__line--middle {
+  opacity: 0;
+}
+
+.sandwitch--active .sandwitch__line--bottom {
+  top: 6px;
+  transform: rotate(-45deg);
+}
+
+.sandwitch__line {
+  position: absolute;
+  left: 5px;
+  display: block;
+  width: 70%;
+  height: 3px;
+  transition: all linear 0.1s;
+  background-color: #35414b;
+}
+
+.sandwitch__line--top {
+  top: 0;
+}
+
+.sandwitch__line--middle {
+  top: 7px;
+}
+
+.sandwitch__line--bottom {
+  top: 14px;
+}

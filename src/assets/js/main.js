@@ -34,6 +34,16 @@ $(function () {
     });
   };
   slider();
+
+  let sandwitch = function () {
+    $('.sandwitch').on('click', function () {
+      $('#js-main-menu').toggleClass('fixed');
+      $('body').toggleClass('fixed');
+      $(this).toggleClass('sandwitch--active');
+      $(this).closest('.sandwitch-wrapper').toggleClass('sandwitch--active');
+    });
+  };
+  sandwitch();
 });
 
 

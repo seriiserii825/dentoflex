@@ -1,10 +1,16 @@
 .navigation
     .container
         .navigation__content
+            .sandwitch-wrapper
+                .sandwitch
+                    .sandwitch__line.sandwitch__line--top
+                    .sandwitch__line.sandwitch__line--middle
+                    .sandwitch__line.sandwitch__line--bottom
+
             a.logo(href="index.html")
                 img.logo__img(src="assets/i/logo.svg")
                 span.logo__text DENTOFLEX
-            ul.main-menu
+            ul.main-menu#js-main-menu
                 li.current-menu-item
                     a(href="about.html") About us
                 li

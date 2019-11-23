@@ -3,6 +3,10 @@
   font-size: 15px;
   color: white;
   background: $picton-blue;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+
   a {
     text-decoration: none;
     color: white;
