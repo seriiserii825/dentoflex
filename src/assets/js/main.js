@@ -20,7 +20,15 @@ $(function () {
   let slider = function () {
     $('#js-slider').slick({
       arrows: false,
-      fade: true
+      fade: true,
+      responsive: [
+        {
+          breakpoint: 720,
+          settings: {
+            dots: true
+          }
+        },
+      ]
     });
 
     $('.slider__button--left').on('click', function (e) {

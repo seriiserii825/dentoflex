@@ -18,11 +18,19 @@
     @media screen and (max-width: 972px) {
       padding-left: 40px;
     }
+    @media screen and (max-width: 450px) {
+      padding-left: 30px;
+    }
+    
 
   }
   .logo__img {
     margin-right: 14px;
     width: 41px;
+    @media screen and (max-width: 400px) {
+      margin-right: 0;
+    }
+
   }
   .logo__text {
     display: inline-block;
@@ -30,6 +38,10 @@
     text-transform: uppercase;
     font-style: italic;
     color: $limed-spruce;
+    @media screen and (max-width: 430px) {
+      display: none;
+    }
+
   }
 }
 .main-menu {

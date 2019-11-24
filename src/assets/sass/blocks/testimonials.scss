@@ -2,14 +2,52 @@
   &__content {
     position: relative;
     top: -60px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    @media screen and (max-width: 1050px) {
+      margin: 0 auto;
+      max-width: 700px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 576px) {
+      display: block;
+      max-width: 340px;
+    }
+
   }
-  &__item {
-    flex: 1;
+  &__item{
+    position: relative;
     padding: 30px 20px;
     color: white;
     background: $picton-blue;
     border-right: 2px solid #9cd9ef;
+    @media screen and (max-width: 1050px) {
+      border-bottom: 2px solid #9cd9ef;
+    }
+    @media screen and (max-width: 576px) {
+      padding: 30px;
+      border: none;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      display: none;
+      width: 80%;
+      height: 2px;
+      background: #9cd9ef;
+      @media screen and (max-width: 576px) {
+        display: block;
+      }
+
+    }
+
+    &:nth-child(2n) {
+      border-right: none;
+    }
+
     &:last-child {
       border: none;
     }
