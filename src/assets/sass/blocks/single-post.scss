@@ -1,5 +1,9 @@
 .single-post {
   padding-top: 20px;
+
+  &:first-of-type {
+    margin-top: 50px;
+  }
   &.single-post--reverse {
     .single-post__content {
       order: 3;
