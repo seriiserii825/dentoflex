@@ -13,7 +13,6 @@ body {
   color: $limed-spruce;
   background: white;
   &.fixed {
-    //padding-left: 14px;
     overflow: hidden;
   }
 }
@@ -86,7 +85,10 @@ p {
 }
 
 @import "blocks/sandwitch";
+@import "blocks/section";
 @import "blocks/header";
 @import "blocks/navigation";
 @import "blocks/slider";
 @import "blocks/testimonials";
+@import "blocks/single-post";
+@import "blocks/our-services";
