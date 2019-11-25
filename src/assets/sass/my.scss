@@ -97,6 +97,33 @@ p {
     background: #BF3D05;
   }
 }
+.page-intro {
+  position: relative;
+  height: 100px;
+  background-size: cover;
+  z-index: 1;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $picton-blue;
+    z-index: 3;
+    opacity: .6;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    height: 100px;
+  }
+  &__title {
+    position: relative;
+    color: white;
+    z-index: 4;
+  }
+}
 
 @import "blocks/sandwitch";
 @import "blocks/section";
