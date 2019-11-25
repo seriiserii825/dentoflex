@@ -1,0 +1,58 @@
+extends template
+
+block css
+    //- link(rel="stylesheet" type="text/css" href="assets/i/svg/bg/css/sprite.css")
+    link(rel="stylesheet" type="text/css" href="assets/css/my.css")
+
+block title
+    title Main
+
+block content
+    include ../includes/mixins
+    .hidden
+        include ../../../build/assets/i/svg/inline/sprite.svg
+
+    include ../includes/header
+    include ../includes/navigation
+    .page-intro(style="background-image: url('assets/i/page-intro-about.jpg')")
+        .container
+            h2.page-intro__title Contacts
+
+    .contacts-page
+        .container
+            .contacts-page__container
+                .contacts-page__item
+                    header.section__header
+                        h2.section__title Get In Touch
+                    .contacts-form
+                        input(type="text" name="name" placeholder="Name")
+                        .contacts-form__group
+                            input(type="email" name="name" placeholder="Email")
+                            input(type="number" name="name" placeholder="Phone")
+                        textarea(placeholder="Message")
+                        input.btn(type="submit" value="Send Message")
+
+                .contacts-page__item
+                    header.section__header
+                        h2.section__title incididunt ut labore
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    ul.contacts-page__list
+                        li
+                            img(src="assets/i/map.svg" alt="")
+                            span Chișinău, Bulevardul Constantin Negruzzi 102
+                        li
+                            img(src="assets/i/phone-fix.svg" alt="")
+                            span <a href="tel:(+373) 79 580 458">(+373) 79 580 458</a>, <a href="tel:(+373) 79 980 458">(+373) 79 980 458</a>
+                        li
+                            img(src="assets/i/mail-blue.svg" alt="")
+                            span <a href="mailto:clinic_dental@gmail.com">clinic_dental@gmail.com</a>,<br> <a href="mailto:support_dental@gmail.com">support_dental@gmail.com</a>
+
+
+
+    include ../includes/footer
+
+    include ../includes/scripts/ie-scripts
+
+block scripts
+    script(src="assets/libs/jquery-easy-scroll/jquery.easeScroll.js")
+    script(src="assets/libs/slick/slick/slick.min.js")
