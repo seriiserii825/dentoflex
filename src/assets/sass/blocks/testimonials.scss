@@ -1,4 +1,11 @@
 .testimonials {
+  .container {
+    @media screen and (max-width: 400px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+  }
   &__content {
     position: relative;
     top: -60px;
@@ -10,6 +17,7 @@
       grid-template-columns: repeat(2, 1fr);
     }
     @media screen and (max-width: 576px) {
+      top: 0;
       display: block;
       max-width: 340px;
     }
@@ -45,7 +53,9 @@
     }
 
     &:nth-child(2n) {
-      border-right: none;
+      @media screen and (max-width: 576px) {
+        border-right: none;
+      }
     }
 
     &:last-child {
@@ -68,7 +78,12 @@
   }
   &__title {
     margin-bottom: 14px;
+    @include montserat;
     text-align: center;
+    @media screen and (max-width: 400px) {
+      font-size: 24px;
+    }
+
   }
   &__text {
     text-align: center;
