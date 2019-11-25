@@ -73,6 +73,20 @@ p {
   border-radius: 7px;
   background-color: #eb662d;
   transition: all .3s ease;
+  &.btn--white {
+    color: $limed-spruce;
+    background: white;
+    &:active {
+      color: white;
+      background-color: $limed-spruce;
+      box-shadow: none;
+    }
+
+    &:hover {
+      color: white;
+      background-color: $limed-spruce;
+    }
+  }
 
   &:active {
     background-color: #eb662d;
@@ -93,3 +107,4 @@ p {
 @import "blocks/single-post";
 @import "blocks/blocks";
 @import "blocks/our-specialists";
+@import "blocks/footer";
