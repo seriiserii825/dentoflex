@@ -1,4 +1,5 @@
 .main-footer {
+  margin-top: 70px;
   padding-top: 80px;
   color: white;
   @media screen and (max-width: 980px) {
@@ -31,6 +32,10 @@
       margin-right: 15px;
       text-transform: uppercase;
       color: #f7f9fa;
+      transition: all .3s ease;
+      &:hover {
+        color: $picton-blue;
+      }
     }
   }
 }

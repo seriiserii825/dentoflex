@@ -1,0 +1,89 @@
+extends template
+
+block css
+    //- link(rel="stylesheet" type="text/css" href="assets/i/svg/bg/css/sprite.css")
+    link(rel="stylesheet" type="text/css" href="assets/css/my.css")
+
+block title
+    title Main
+
+block content
+    include ../includes/mixins
+    .hidden
+        include ../../../build/assets/i/svg/inline/sprite.svg
+
+    include ../includes/header
+    include ../includes/navigation
+
+    section.single-post.section
+        .container
+            .single-post__content
+                header.section__header
+                    .section__subtitle Primary care dental
+                    .section__title Beautiful Natural Smiles
+
+                .single-post__text
+                    p A general dentist is your primary care dental provider. This dentist diagnoses, treats, and manages your overall oral health care needs, including gum care, root canals, fillings, crowns, veneers, bridges, and preventive education.
+                    p Promotes unrealistic expectations of what a healthy smile looks like and it is clearly having a negative effect
+                a.btn Read more
+
+            img(src="assets/i/single-post-image.jpg").single-post__img
+
+    section.single-post.single-post--reverse.section
+        .container
+            .single-post__content
+                header.section__header
+                    .section__subtitle Primary care dental
+                    .section__title Beautiful Natural Smiles
+
+                .single-post__text
+                    p A general dentist is your primary care dental provider. This dentist diagnoses, treats, and manages your overall oral health care needs, including gum care, root canals, fillings, crowns, veneers, bridges, and preventive education.
+                    p Promotes unrealistic expectations of what a healthy smile looks like and it is clearly having a negative effect
+                a.btn Read more
+
+            img(src="assets/i/single-post-image.jpg").single-post__img
+
+    .container
+        section.about-content
+            .about-content__item
+                header.section__header
+                    h2.section__title Duis aute irure
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+            .about-content__item
+                header.section__header
+                    h2.section__title Exercitation ullamco
+                ul.list
+                    li.list__item
+                        img(src="assets/i/check-icon.svg" alt="")
+                        span Behavioral health
+                    li.list__item
+                        img(src="assets/i/check-icon.svg" alt="")
+                        span Behavioral health
+                    li.list__item
+                        img(src="assets/i/check-icon.svg" alt="")
+                        span Behavioral health
+                    li.list__item
+                        img(src="assets/i/check-icon.svg" alt="")
+                        span Behavioral health
+                    li.list__item
+                        img(src="assets/i/check-icon.svg" alt="")
+                        span Behavioral health
+                    li.list__item
+                        img(src="assets/i/check-icon.svg" alt="")
+                        span Behavioral health
+                    li.list__item
+                        img(src="assets/i/check-icon.svg" alt="")
+                        span Behavioral health
+                    li.list__item
+                        img(src="assets/i/check-icon.svg" alt="")
+                        span Behavioral health
+
+    include ../includes/footer
+
+    include ../includes/scripts/ie-scripts
+
+block scripts
+    script(src="assets/libs/jquery-easy-scroll/jquery.easeScroll.js")
+    script(src="assets/libs/slick/slick/slick.min.js")

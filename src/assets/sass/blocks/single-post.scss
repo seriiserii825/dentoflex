@@ -1,5 +1,13 @@
 .single-post {
   padding-top: 20px;
+  &.single-post--reverse {
+    .single-post__content {
+      order: 3;
+    }
+    img {
+      order: 2;
+    }
+  }
   .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
