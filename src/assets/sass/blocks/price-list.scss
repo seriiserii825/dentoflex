@@ -1,0 +1,76 @@
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #dddddd;
+  @media screen and (max-width: 992px) {
+    display: block;
+    text-align: center;
+  }
+
+  a {
+    display: block;
+    padding: 18px;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid transparent;
+    transition: all .3s;
+    @media screen and (max-width: 992px) {
+      border: none;
+    }
+
+    &:hover,
+    &.active {
+      color: $picton-blue;
+      border-bottom-color: $picton-blue;
+      @media screen and (max-width: 992px) {
+      	border: none;
+        color: white;
+        background: $picton-blue;
+      }
+
+    }
+  }
+
+  &-content {
+    padding: 40px 0;
+
+    &__item {
+      display: none;
+
+      &:first-child {
+        display: block;
+      }
+    }
+
+    &__title {
+      margin-bottom: 30px;
+      @include montserat;
+      font-size: 24px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $picton-blue;
+    }
+  }
+}
+
+table {
+  margin: 0 auto;
+  width: 820px;
+  @media screen and (max-width: 830px) {
+  	width: 100%;
+  }
+
+
+  tr {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &:nth-child(odd) {
+      background: #f7f9fa;
+    }
+  }
+
+  td {
+    padding: 16px;
+  }
+}

@@ -52,6 +52,18 @@ $(function () {
     });
   };
   sandwitch();
+
+  let tabs = function () {
+    $('#js-tabs a').on('click', function (e) {
+      e.preventDefault();
+      let id = $(this).attr('href');
+      $('#js-tabs a').removeClass('active');
+      $(this).addClass('active');
+      $('#js-tabs-content .tabs-content__item').fadeOut(100);
+      $(id).fadeIn(100);
+    });
+  };
+  tabs();
 });
 
 
