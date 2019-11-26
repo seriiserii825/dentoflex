@@ -64,6 +64,19 @@ $(function () {
     });
   };
   tabs();
+
+  let showPopup = function () {
+    $('#js-show-popup').on('click', function (e) {
+      e.preventDefault();
+      $('#js-overlay').fadeIn(100);
+      $('#js-popup').addClass('active');
+    });
+    $('#js-overlay, #js-popup-close').on('click', function () {
+      $('#js-overlay').fadeOut(100);
+      $('#js-popup').removeClass('active');
+    });
+  };
+  showPopup();
 });
 
 
