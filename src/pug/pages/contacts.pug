@@ -2,6 +2,7 @@ extends template
 
 block css
     //- link(rel="stylesheet" type="text/css" href="assets/i/svg/bg/css/sprite.css")
+    link(rel="stylesheet" type="text/css" href="assets/libs/wow/animate.min.css")
     link(rel="stylesheet" type="text/css" href="assets/css/my.css")
 
 block title
@@ -21,7 +22,7 @@ block content
     .contacts-page
         .container
             .contacts-page__container
-                .contacts-page__item
+                .contacts-page__item.wow.fadeInLeft
                     header.section__header
                         h2.section__title Get In Touch
                     .contacts-form
@@ -32,7 +33,7 @@ block content
                         textarea(placeholder="Message")
                         input.btn(type="submit" value="Send Message")
 
-                .contacts-page__item
+                .contacts-page__item.wow.fadeInRight
                     header.section__header
                         h2.section__title incididunt ut labore
                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis

@@ -2,6 +2,7 @@ extends template
 
 block css
     //- link(rel="stylesheet" type="text/css" href="assets/i/svg/bg/css/sprite.css")
+    link(rel="stylesheet" type="text/css" href="assets/libs/wow/animate.min.css")
     link(rel="stylesheet" type="text/css" href="assets/css/my.css")
 
 block title
@@ -20,7 +21,7 @@ block content
 
     section.single-post.section.single-post--reverse
         .container
-            .single-post__content
+            .single-post__content.wow.fadeIn
                 header.section__header
                     .section__title Prosthodontics
 
@@ -29,10 +30,10 @@ block content
                     p Promotes unrealistic expectations of what a healthy smile looks like and it is clearly having a negative effect
                     p We’ve built our stellar reputation upon the premise that minutes always count – whether it is improving your heart health,
 
-            img(src="assets/i/services-single.jpg").single-post__img
+            img(src="assets/i/services-single.jpg").single-post__img.wow.fadeIn
     .container
         .services-single
-            .services-single__item
+            .services-single__item.wow.fadeInLeft
                 header.section__header
                     h2.section__title Duis aute irure
                 ul.simple-list
@@ -46,7 +47,7 @@ block content
                         b Integrative MedicineI
                         p Specialized X-rays of the breast to aid in the early detection of breast cancer. A yearly mammogram is recommended for women age 40 and older.
 
-            .services-single__item
+            .services-single__item.wow.fadeIn
                 header.section__header
                     h2.section__title Our Specialist
 

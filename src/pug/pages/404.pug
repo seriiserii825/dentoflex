@@ -2,6 +2,7 @@ extends template
 
 block css
     //- link(rel="stylesheet" type="text/css" href="assets/i/svg/bg/css/sprite.css")
+    link(rel="stylesheet" type="text/css" href="assets/libs/wow/animate.min.css")
     link(rel="stylesheet" type="text/css" href="assets/css/my.css")
 
 block title
@@ -16,9 +17,9 @@ block content
     include ../includes/navigation
 
     .page-404
-        h2.page-404__title 404
-        h3.page-404__subtitle Sory, page not found!
-        a(href="index.html").btn Back to home
+        h2.page-404__title.wow.zoomIn 404
+        h3.page-404__subtitle.wow.zoomInLeft Sory, page not found!
+        a(href="index.html").btn.wow.zoomInRight Back to home
 
     include ../includes/footer
 

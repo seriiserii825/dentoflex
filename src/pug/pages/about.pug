@@ -2,6 +2,7 @@ extends template
 
 block css
     //- link(rel="stylesheet" type="text/css" href="assets/i/svg/bg/css/sprite.css")
+    link(rel="stylesheet" type="text/css" href="assets/libs/wow/animate.min.css")
     link(rel="stylesheet" type="text/css" href="assets/css/my.css")
 
 block title
@@ -20,7 +21,7 @@ block content
 
     section.single-post.section
         .container
-            .single-post__content
+            .single-post__content.wow.zoomIn
                 header.section__header
                     .section__subtitle Primary care dental
                     .section__title Beautiful Natural Smiles
@@ -34,7 +35,7 @@ block content
 
     section.single-post.single-post--reverse.section
         .container
-            .single-post__content
+            .single-post__content.wow.zoomIn
                 header.section__header
                     .section__subtitle Primary care dental
                     .section__title Beautiful Natural Smiles
@@ -48,13 +49,13 @@ block content
 
     .container
         section.about-content
-            .about-content__item
+            .about-content__item.wow.fadeIn
                 header.section__header
                     h2.section__title Duis aute irure
                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-            .about-content__item
+            .about-content__item.wow.fadeIn
                 header.section__header
                     h2.section__title Exercitation ullamco
                 ul.list
