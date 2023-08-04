@@ -12,14 +12,14 @@
   &__item {
     padding: 45px;
     @media screen and (max-width: 992px) {
-      margin: 0 auto;
+      margin4: 0 auto;
       max-width: 700px;
     }
 
     &:last-child {
       box-shadow: 0 5px 12px rgba(0, 0, 0, 0.06);
       @media screen and (max-width: 992px) {
-        margin-top: 40px;
+        margin4-top: 40px;
       }
     }
   }
@@ -32,7 +32,7 @@
     }
 
     img {
-      margin-right: 20px;
+      margin4-right: 20px;
     }
 
     span,
@@ -58,7 +58,7 @@
   textarea,
   input[type="email"],
   input[type="text"] {
-    margin-bottom: 20px;
+    margin4-bottom: 20px;
     padding: 10px;
     font-size: 16px;
     border: none;
