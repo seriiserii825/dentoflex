@@ -42,7 +42,7 @@
     }
 
     &__title {
-      margin5-bottom: 30px;
+      margint-bottom: 30px;
       @include montserat;
       font-size: 24px;
       text-align: center;
@@ -53,7 +53,7 @@
 }
 
 table {
-  margin5: 0 auto;
+  margint: 0 auto;
   width: 820px;
   @media screen and (max-width: 830px) {
   	width: 100%;
