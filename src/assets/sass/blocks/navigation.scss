@@ -13,7 +13,7 @@
   .logo {
     display: flex;
     align-items: center;
-    margin-right: 64px;
+    marging-right: 64px;
     text-decoration: none;
     @media screen and (max-width: 972px) {
       padding-left: 40px;
@@ -25,10 +25,10 @@
 
   }
   .logo__img {
-    margin-right: 14px;
+    marging-right: 14px;
     width: 41px;
     @media screen and (max-width: 400px) {
-      margin-right: 0;
+      marging-right: 0;
     }
 
   }
@@ -75,7 +75,7 @@
     color: $limed-spruce;
     transition: all .4s ease;
     @media screen and (max-width: 972px) {
-      margin-bottom: 20px;
+      marging-bottom: 20px;
     }
 
     &:hover {
@@ -90,7 +90,7 @@
 }
 .wpglobus-selector-link {
   display: block;
-  margin-left: 4px;
+  marging-left: 4px;
   padding: 7px;
   font-size: 16px;
   text-transform: uppercase;

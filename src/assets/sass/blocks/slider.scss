@@ -71,7 +71,7 @@
   &__content {
     position: relative;
     top: 180px;
-    margin: 0 auto;
+    marging: 0 auto;
     padding: 0 15px;
     max-width: 1210px;
     color: white;
@@ -88,7 +88,7 @@
 
   }
   &__title {
-    margin-bottom: 28px;
+    marging-bottom: 28px;
     @include montserat;
     font-size: 40px;
     font-weight: bold;
@@ -103,7 +103,7 @@
   }
   &__text {
     position: relative;
-    margin-bottom: 40px;
+    marging-bottom: 40px;
     padding-left: 10px;
     max-width: 670px;
     font-size: 24px;
@@ -135,7 +135,7 @@
 
     li {
       display: inline-block;
-      margin-right: 10px;
+      marging-right: 10px;
       width: 10px;
       height: 10px;
       font-size: 0;

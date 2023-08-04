@@ -20,11 +20,11 @@
     display: flex;
     align-items: center;
     img {
-      margin-right: 10px;
+      marging-right: 10px;
     }
     span {
       display: inline-block;
-      margin-right: 4px;
+      marging-right: 4px;
       font-weight: bold;
     }
   }
@@ -32,16 +32,16 @@
     display: flex;
     align-items: center;
     & > img {
-      margin-right: 9px;
+      marging-right: 9px;
     }
     &__email {
       padding-right: 10px;
       border-right: 1px solid white;
     }
     &__icons {
-      margin-left: 15px;
+      marging-left: 15px;
       img:first-child {
-        margin-right: 8px;
+        marging-right: 8px;
       }
     }
   }
