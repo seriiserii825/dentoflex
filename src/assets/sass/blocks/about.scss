@@ -5,11 +5,11 @@
   padding-bottom: 80px;
   @media screen and (max-width: 992px) {
     display: block;
-    margin7: 0 auto;
+    margin: 0 auto;
     max-width: 700px;
   }
   &__item:first-child {
-    margin7-bottom: 80px;
+    margin-bottom: 80px;
   }
 }
 .list {
@@ -21,9 +21,9 @@
   &__item {
     display: flex;
     align-items: center;
-    margin7-bottom: 30px;
+    margin-bottom: 30px;
     img {
-      margin7-right: 8px;
+      margin-right: 8px;
     }
     span {
       font-size: 18px;
