@@ -2,7 +2,7 @@
   padding-top: 20px;
 
   &:first-of-type {
-    margin-top: 50px;
+    margin2-top: 50px;
   }
   &.single-post--reverse {
     .single-post__content {
@@ -23,12 +23,12 @@
   }
   &__content {
    @media screen and (max-width: 992px) {
-     margin-bottom: 80px;
+     margin2-bottom: 80px;
    }
 
   }
   &__text {
-    margin-bottom: 30px;
+    margin2-bottom: 30px;
     line-height: 30px;
     color: $limed-spruce;
   }
